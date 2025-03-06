@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐，童慧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        .name {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        .heart {
+            color: #ff6f61;
+            font-size: 2rem;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>🎂生日快乐，<span class="name">童慧</span>！🎂</h1>
+        <p>
+            你可能以为我忘记了你的生日，但并没有，<br>
+            我永远都不会忘记的，我的小乖。<br>
+            今天的你，一定比平时更加耀眼吧。<br>
+            每次和你聊天，都让我觉得时间过得特别快，<br>
+            就像今天的祝福一样，希望它能悄悄留在你心里。<br>
+            愿你的每一天都像今天一样特别，<br>
+            也希望我能成为你生活中那一抹温暖的色彩。<br>
+            <span class="heart">❤️</span>
+        </p>
+    </div>
+
+    <!-- 背景音乐 -->
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+
+    <script>
+        // 确保音乐自动播放
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.querySelector('audio');
+            // 提示用户点击页面以播放音乐
+            document.body.addEventListener('click', function() {
+                audio.play();
+            });
+        });
+    </script>
+</body>
+</html>
